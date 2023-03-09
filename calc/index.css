@@ -1,0 +1,122 @@
+*, * + * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --main-theme: rgb(0, 0, 0, 0.85);
+    --contrast-theme: rgb(255, 255, 255, 0.85);
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    font-family: Bahnschrift, sans-serif;
+    font-size: 34px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: var(--main-theme);
+    color: var(--contrast-theme);
+    text-shadow: 1px 1px 13px var(--contrast-theme);
+}
+
+.fieldframe {
+    appearance: none;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 1px 1px 15px 1px var(--contrast-theme);
+}
+
+.calc {
+    width: 50%;
+    min-height: fit-content;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.calc__output {
+    margin-bottom: 50px;
+}
+
+.calc__block {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 20px;
+    margin: 10px 0;
+}
+
+.calc__block-input {
+    flex-flow: row nowrap;
+}
+
+.calc__block-oper {
+    flex-flow: row wrap;
+}
+
+.calc__form {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 24px;
+}
+
+.calc__form-item {
+    margin: 15px;
+}
+
+.calc__input {
+    width: 45%;
+    height: 50px;
+    appearance: none;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid var(--contrast-theme);
+    background-color: inherit;
+    color: inherit;
+    font-size: inherit;
+}
+
+.calc__radio {
+    display: none;
+}
+
+.calc__radio-label {
+    cursor: pointer;
+    line-height: 2.5;
+    padding: 10px 0;
+}
+
+.calc__radio_active {
+    padding: 10px 15px;
+    border-radius: 5px;
+    outline: 1px solid var(--contrast-theme);
+}
+
+.calc__btn {
+    width: 100%;
+    padding: 5px 20px;
+    appearance: none;
+    background-color: inherit;
+    color: inherit;
+    font-size: inherit;
+    outline: 1px solid var(--contrast-theme);
+    cursor: pointer;
+}
+
+.foot {
+    width: 100%;
+    padding: 20px;
+    font-size: 16px;
+    font-weight: 700;
+}
